@@ -11,7 +11,7 @@ st.title("✍️ Handwritten Digit Recognition")
 st.write("Upload a handwritten digit image and AI will try to recognize it.")
 
 
-@st cache_resource
+@st.cache_resource
 def load_model():
   try:
     from sklearn.datasets import load_digits
